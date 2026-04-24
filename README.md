@@ -21,6 +21,7 @@ Claude Code picks it up automatically on next launch.
 | [js-ts-specialist](agents/js-ts-specialist.md) | JavaScript/TypeScript across all frameworks (detects from project) |
 | [web3-specialist](agents/web3-specialist.md) | Solidity, smart-contract security, ethers/viem |
 | [codebase-explorer](agents/codebase-explorer.md) | Answers "where/how" questions without bloating main context |
+| [fullstack-developer](agents/fullstack-developer.md) | Builds complete features spanning database, API, and frontend as a cohesive unit |
 
 ## Authoring your own
 
