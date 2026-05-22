@@ -1,0 +1,9 @@
+{
+  "name": "claude-agents-library",
+  "description": "Curated Claude Code subagents and skills — agents, slash commands, and reference material.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Fredyss"
+  },
+  "homepage": "https://github.com/Fredyss/claude-agents-library"
+}

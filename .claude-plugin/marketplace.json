@@ -1,92 +1,14 @@
 {
+  "name": "claude-agents-library",
   "owner": {
-    "name": "Fredyss",
-    "url": "https://github.com/Fredyss/claude-agents-library"
+    "name": "Fredyss"
   },
+  "description": "Curated Claude Code subagents and skills",
   "plugins": [
     {
-      "name": "code-reviewer",
-      "description": "Reviews diffs for bugs, regressions, style issues, and missing tests. Read-only.",
-      "type": "agent",
-      "source": "agents/code-reviewer.md"
-    },
-    {
-      "name": "codebase-explorer",
-      "description": "Answers where/how questions by searching multiple files without bloating the main context.",
-      "type": "agent",
-      "source": "agents/codebase-explorer.md"
-    },
-    {
-      "name": "fullstack-developer",
-      "description": "Builds complete features spanning database, API, and frontend as a cohesive unit.",
-      "type": "agent",
-      "source": "agents/fullstack-developer.md"
-    },
-    {
-      "name": "js-ts-specialist",
-      "description": "JavaScript/TypeScript expert across all frameworks — detects stack from package.json.",
-      "type": "agent",
-      "source": "agents/js-ts-specialist.md"
-    },
-    {
-      "name": "python-specialist",
-      "description": "Python expert — detects framework from pyproject.toml. Covers typing, async, and performance.",
-      "type": "agent",
-      "source": "agents/python-specialist.md"
-    },
-    {
-      "name": "security-auditor",
-      "description": "Scans diffs for OWASP Top 10 issues and leaked credentials before commits or deploys.",
-      "type": "agent",
-      "source": "agents/security-auditor.md"
-    },
-    {
-      "name": "solidity-specialist",
-      "description": "Writes, reviews, audits, and tests Solidity contracts and EVM dApps end-to-end.",
-      "type": "agent",
-      "source": "agents/solidity-specialist.md"
-    },
-    {
-      "name": "system-design-expert",
-      "description": "Designs and reviews scalable backend systems with tradeoff reasoning.",
-      "type": "agent",
-      "source": "agents/system-design-expert.md"
-    },
-    {
-      "name": "web3-specialist",
-      "description": "Smart contracts, EVM tooling (Foundry/Hardhat), and web3 client libraries (ethers/viem/wagmi).",
-      "type": "agent",
-      "source": "agents/web3-specialist.md"
-    },
-    {
-      "name": "explain",
-      "description": "Explains what a file or function does, why it exists, and how it connects to surrounding code.",
-      "type": "command",
-      "source": "skills/explain.md"
-    },
-    {
-      "name": "standup",
-      "description": "Generates a standup update from recent git activity.",
-      "type": "command",
-      "source": "skills/standup.md"
-    },
-    {
-      "name": "todo",
-      "description": "Lists and prioritizes TODO/FIXME/HACK comments across the codebase.",
-      "type": "command",
-      "source": "skills/todo.md"
-    },
-    {
-      "name": "system-design",
-      "description": "Designs scalable systems end-to-end with tradeoff reasoning and reference material.",
-      "type": "command",
-      "source": "skills/system-design"
-    },
-    {
-      "name": "solidity-dapp",
-      "description": "Writes, reviews, and secures Solidity contracts and web3 frontends with reference material.",
-      "type": "command",
-      "source": "skills/solidity-dapp"
+      "name": "claude-agents-library",
+      "source": "./",
+      "description": "All agents and skills: code review, security audit, JS/TS, Python, Solidity, system design, and more."
     }
   ]
 }
