@@ -1,0 +1,130 @@
+{
+  "schema": "claude-marketplace/v1",
+  "name": "claude-agents-library",
+  "description": "Curated Claude Code subagents and skills",
+  "repository": "https://github.com/Fredyss/claude-agents-library",
+  "raw_base": "https://raw.githubusercontent.com/Fredyss/claude-agents-library/main",
+  "agents": [
+    {
+      "name": "code-reviewer",
+      "description": "Reviews diffs for bugs, regressions, style issues, and missing tests. Read-only.",
+      "tags": ["review", "quality"],
+      "file": "agents/code-reviewer.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "codebase-explorer",
+      "description": "Answers where/how questions by searching multiple files without bloating the main context.",
+      "tags": ["exploration", "search"],
+      "file": "agents/codebase-explorer.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "fullstack-developer",
+      "description": "Builds complete features spanning database, API, and frontend as a cohesive unit.",
+      "tags": ["fullstack", "backend", "frontend"],
+      "file": "agents/fullstack-developer.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "js-ts-specialist",
+      "description": "JavaScript/TypeScript expert across all frameworks — detects stack from package.json.",
+      "tags": ["javascript", "typescript", "frontend", "node"],
+      "file": "agents/js-ts-specialist.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "python-specialist",
+      "description": "Python expert — detects framework from pyproject.toml. Covers typing, async, and performance.",
+      "tags": ["python", "backend"],
+      "file": "agents/python-specialist.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "security-auditor",
+      "description": "Scans diffs for OWASP Top 10 issues and leaked credentials before commits or deploys.",
+      "tags": ["security", "review"],
+      "file": "agents/security-auditor.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "solidity-specialist",
+      "description": "Writes, reviews, audits, and tests Solidity contracts and EVM dApps end-to-end.",
+      "tags": ["solidity", "web3", "blockchain", "evm"],
+      "file": "agents/solidity-specialist.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "system-design-expert",
+      "description": "Designs and reviews scalable backend systems with tradeoff reasoning across databases, scaling, APIs, and security.",
+      "tags": ["architecture", "backend", "system-design"],
+      "file": "agents/system-design-expert.md",
+      "install_to": ".claude/agents/"
+    },
+    {
+      "name": "web3-specialist",
+      "description": "Smart contracts, EVM tooling (Foundry/Hardhat), and web3 client libraries (ethers/viem/wagmi).",
+      "tags": ["web3", "solidity", "blockchain"],
+      "file": "agents/web3-specialist.md",
+      "install_to": ".claude/agents/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "explain",
+      "description": "Explains what a file or function does, why it exists, and how it connects to surrounding code.",
+      "tags": ["docs", "exploration"],
+      "type": "file",
+      "file": "skills/explain.md",
+      "install_to": ".claude/commands/"
+    },
+    {
+      "name": "standup",
+      "description": "Generates a standup update from recent git activity.",
+      "tags": ["productivity", "git"],
+      "type": "file",
+      "file": "skills/standup.md",
+      "install_to": ".claude/commands/"
+    },
+    {
+      "name": "todo",
+      "description": "Lists and prioritizes TODO/FIXME/HACK comments across the codebase.",
+      "tags": ["productivity", "quality"],
+      "type": "file",
+      "file": "skills/todo.md",
+      "install_to": ".claude/commands/"
+    },
+    {
+      "name": "system-design",
+      "description": "Designs scalable systems end-to-end with tradeoff reasoning and reference material.",
+      "tags": ["architecture", "backend", "system-design"],
+      "type": "directory",
+      "path": "skills/system-design",
+      "files": [
+        "skills/system-design/SKILL.md",
+        "skills/system-design/references/api-design.md",
+        "skills/system-design/references/auth-and-security.md",
+        "skills/system-design/references/databases.md",
+        "skills/system-design/references/load-balancing.md",
+        "skills/system-design/references/scaling.md"
+      ],
+      "install_to": ".claude/commands/"
+    },
+    {
+      "name": "solidity-dapp",
+      "description": "Writes, reviews, and secures Solidity contracts and web3 frontends with reference material.",
+      "tags": ["solidity", "web3", "blockchain", "evm"],
+      "type": "directory",
+      "path": "skills/solidity-dapp",
+      "files": [
+        "skills/solidity-dapp/SKILL.md",
+        "skills/solidity-dapp/references/contract-patterns.md",
+        "skills/solidity-dapp/references/dapp-integration.md",
+        "skills/solidity-dapp/references/language.md",
+        "skills/solidity-dapp/references/security.md",
+        "skills/solidity-dapp/references/tooling-and-testing.md"
+      ],
+      "install_to": ".claude/commands/"
+    }
+  ]
+}
