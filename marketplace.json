@@ -75,7 +75,7 @@
       "description": "Explains what a file or function does, why it exists, and how it connects to surrounding code.",
       "tags": ["docs", "exploration"],
       "type": "file",
-      "file": "skills/explain.md",
+      "file": "commands/explain.md",
       "install_to": ".claude/commands/"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Generates a standup update from recent git activity.",
       "tags": ["productivity", "git"],
       "type": "file",
-      "file": "skills/standup.md",
+      "file": "commands/standup.md",
       "install_to": ".claude/commands/"
     },
     {
@@ -91,7 +91,7 @@
       "description": "Lists and prioritizes TODO/FIXME/HACK comments across the codebase.",
       "tags": ["productivity", "quality"],
       "type": "file",
-      "file": "skills/todo.md",
+      "file": "commands/todo.md",
       "install_to": ".claude/commands/"
     },
     {
@@ -108,7 +108,7 @@
         "skills/system-design/references/load-balancing.md",
         "skills/system-design/references/scaling.md"
       ],
-      "install_to": ".claude/commands/"
+      "install_to": ".claude/skills/"
     },
     {
       "name": "solidity-dapp",
@@ -124,7 +124,56 @@
         "skills/solidity-dapp/references/security.md",
         "skills/solidity-dapp/references/tooling-and-testing.md"
       ],
-      "install_to": ".claude/commands/"
+      "install_to": ".claude/skills/"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "description": "Scans the codebase for deepening opportunities, presents them as a visual HTML report, then grills through the chosen one. Vendored from mattpocock/skills (MIT).",
+      "tags": ["architecture", "refactoring", "quality"],
+      "type": "directory",
+      "path": "skills/improve-codebase-architecture",
+      "files": [
+        "skills/improve-codebase-architecture/SKILL.md",
+        "skills/improve-codebase-architecture/HTML-REPORT.md"
+      ],
+      "install_to": ".claude/skills/"
+    },
+    {
+      "name": "codebase-design",
+      "description": "Shared vocabulary and principles for designing deep modules — depth, seams, adapters, leverage, locality. Vendored from mattpocock/skills (MIT).",
+      "tags": ["architecture", "design", "refactoring"],
+      "type": "directory",
+      "path": "skills/codebase-design",
+      "files": [
+        "skills/codebase-design/SKILL.md",
+        "skills/codebase-design/DEEPENING.md",
+        "skills/codebase-design/DESIGN-IT-TWICE.md"
+      ],
+      "install_to": ".claude/skills/"
+    },
+    {
+      "name": "domain-modeling",
+      "description": "Builds and sharpens a project's domain model — glossary terms in CONTEXT.md and decisions as ADRs. Vendored from mattpocock/skills (MIT).",
+      "tags": ["architecture", "domain", "docs"],
+      "type": "directory",
+      "path": "skills/domain-modeling",
+      "files": [
+        "skills/domain-modeling/SKILL.md",
+        "skills/domain-modeling/ADR-FORMAT.md",
+        "skills/domain-modeling/CONTEXT-FORMAT.md"
+      ],
+      "install_to": ".claude/skills/"
+    },
+    {
+      "name": "grilling",
+      "description": "Interviews the user relentlessly about a plan or decision until shared understanding is reached. Vendored from mattpocock/skills (MIT).",
+      "tags": ["productivity", "planning"],
+      "type": "directory",
+      "path": "skills/grilling",
+      "files": [
+        "skills/grilling/SKILL.md"
+      ],
+      "install_to": ".claude/skills/"
     }
   ]
 }
