@@ -134,7 +134,8 @@
       "path": "skills/improve-codebase-architecture",
       "files": [
         "skills/improve-codebase-architecture/SKILL.md",
-        "skills/improve-codebase-architecture/HTML-REPORT.md"
+        "skills/improve-codebase-architecture/HTML-REPORT.md",
+        "skills/improve-codebase-architecture/LICENSE"
       ],
       "install_to": ".claude/skills/"
     },
@@ -147,7 +148,8 @@
       "files": [
         "skills/codebase-design/SKILL.md",
         "skills/codebase-design/DEEPENING.md",
-        "skills/codebase-design/DESIGN-IT-TWICE.md"
+        "skills/codebase-design/DESIGN-IT-TWICE.md",
+        "skills/codebase-design/LICENSE"
       ],
       "install_to": ".claude/skills/"
     },
@@ -160,7 +162,8 @@
       "files": [
         "skills/domain-modeling/SKILL.md",
         "skills/domain-modeling/ADR-FORMAT.md",
-        "skills/domain-modeling/CONTEXT-FORMAT.md"
+        "skills/domain-modeling/CONTEXT-FORMAT.md",
+        "skills/domain-modeling/LICENSE"
       ],
       "install_to": ".claude/skills/"
     },
@@ -171,7 +174,8 @@
       "type": "directory",
       "path": "skills/grilling",
       "files": [
-        "skills/grilling/SKILL.md"
+        "skills/grilling/SKILL.md",
+        "skills/grilling/LICENSE"
       ],
       "install_to": ".claude/skills/"
     }
