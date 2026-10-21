@@ -46,6 +46,12 @@ Flat commands live in `commands/`, directory skills in `skills/`. Copy into:
 | [todo](commands/todo.md) | `/todo [path]` | Lists and prioritizes TODO/FIXME/HACK comments |
 | [system-design](skills/system-design/SKILL.md) | `/system-design [prompt]` | Designs scalable systems end-to-end with reference material |
 | [solidity-dapp](skills/solidity-dapp/SKILL.md) | `/solidity-dapp [prompt]` | Writes, reviews, and secures Solidity contracts and web3 frontends |
+| [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | `/improve-codebase-architecture [area]` | Finds deepening opportunities and presents them as a visual HTML report |
+| [codebase-design](skills/codebase-design/SKILL.md) | `/codebase-design` | Vocabulary and principles for designing deep, testable modules |
+| [domain-modeling](skills/domain-modeling/SKILL.md) | `/domain-modeling` | Maintains the project glossary (CONTEXT.md) and records ADRs |
+| [grilling](skills/grilling/SKILL.md) | `/grilling` | Stress-tests a plan or decision through relentless questioning |
+
+The last four skills are vendored from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT, v1.2.3). `improve-codebase-architecture` builds on the other three — install them together for the full workflow.
 
 ---
 
